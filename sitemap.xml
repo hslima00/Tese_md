@@ -6,7 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hslima00.github.io/Tese_Lima/cadeiras/</loc>
+         <loc>https://hslima00.github.io/Tese_Lima/Markdown/Markdown_Tests/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hslima00.github.io/Tese_Lima/Markdown/markdown-cheat-sheet/</loc>
+         <lastmod>2024-02-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hslima00.github.io/Tese_Lima/Markdown/mkdocs-macro/</loc>
          <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
