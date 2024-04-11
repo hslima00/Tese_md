@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/Reuni%C3%B5es/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/ciafa/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/datasets/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/links/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hslima00.github.io/Tese_Lima/pipeline/</loc>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/workplan/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hslima00.github.io/Tese_Lima/yolov9/</loc>
-         <lastmod>2024-03-22</lastmod>
+         <lastmod>2024-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
