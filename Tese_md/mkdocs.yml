@@ -116,7 +116,6 @@ extra:
       link: https://github.com/hslima00
 extra_css:
   - assets/pymdownx-extras/extra-13d1e30d3e.css
-  - assets/extra.css
 extra_javascript:
   - https://unpkg.com/mermaid@9.1.7/dist/mermaid.min.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
