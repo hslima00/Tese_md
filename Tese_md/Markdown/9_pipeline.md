@@ -31,24 +31,27 @@ Primeiro digito é a `classe` e os restantes são as coordenadas `x,y,w,h` norma
 As coordenadas que o SAM recebe são do formato `xyxy` ==não== normalizadas. Logo o seguinte código foi escrito para fazer a conversão das cordenadas do YOLOv9:
 
 ```python title="Conversão de coordenadas"
-def normalize_to_denormalize(x, y, w, h, image_width, image_height):
-    # Convert normalized coordinates to denormalized coordinates
-    x1 = int(x * image_width)
-    y1 = int(y * image_height)
-    x2 = int((x + w) * image_width)
-    y2 = int((y + h) * image_height)
-    
-    return x1, y1, x2, y2
+# Normalized bounding box coordinates
+x_center_norm = 0.44816
+y_center_norm = 0.550328
+width_norm = 0.896319
+height_norm = 0.582786
 
-# Example usage:
-normalized_coords = (0.371875,  0.34921875,   0.48125,     0.68984375)  # Example normalized coordinates (x, y, w, h)
-image_width = 800  # Example image width
-image_height = 600  # Example image height
+# Image size
+image_width = 1929
+image_height = 1371
 
-x1, y1, x2, y2 = normalize_to_denormalize(*normalized_coords, image_width, image_height)
-print("Denormalized coordinates:", (x1, y1, x2, y2))
+# Convert normalized coordinates to denormalized coordinates
+x_min = (x_center_norm - width_norm / 2) * image_width
+y_min = (y_center_norm - height_norm / 2) * image_height
+x_max = (x_center_norm + width_norm / 2) * image_width
+y_max = (y_center_norm + height_norm / 2) * image_height
 
-# output: Denormalized coordinates: (297, 209, 682, 623)
+# Print denormalized bounding box coordinates
+print("x_min:", x_min)
+print("y_min:", y_min)
+print("x_max:", x_max)
+print("y_max:", y_max)
 ```
 
 Para termos o tamanho da imagem fazemos:
@@ -145,3 +148,20 @@ data = {
         ![img_1675_BW_mask](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_02-56-54.png) 
       <figcaption>Black and white mask</figcaption>
     </figure> 
+
+- [x] Passar para mais do que uma box
+
+???note "Mais do que uma box"
+
+    ![multi-box](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_03-16-33.png)  
+
+- [x] Também é possivel guardar individualmente cada mascara
+
+???note "Mascaras individuais"
+
+    ![picture 3](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_03-37-23.png)
+    ![picture 4](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_03-37-34.png)  
+    ![picture 5](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_03-37-38.png)  
+
+
+TODO: separar em pastas por classe (fumo e fogo)
