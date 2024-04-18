@@ -1,3 +1,8 @@
+---
+hide:
+- navigation
+---
+
 # Pipeline
 
 
@@ -98,3 +103,45 @@ def get_whiteBlack_masks_image(self):
     - ==R:== Continuar com o que temos, e depois ver se podemos usar outra coisa
 - ==D:== Onde arranjar mais imagens para fazer a dataset? (Uma vez que têm que ser privadas)
     - ==R:== Provavelmente FAP tem mais imagens, mas têm que ser pedidas e provavelmente não serão muitas
+
+## 18-Apr-24 
+
+- [x] Ler output do YOLOv9
+- [x] Normalizar coordenadas de `xywh` para `xyxy`
+- [x] Meter tudo numa estrutura de dados do tipo:
+
+```python title="Estrutura de dados"
+data = {
+    'img_path': 'path/to/image.png',
+    'file_name': 'image.png',
+    'bounding_box_data': [
+        {
+            'class_id': 0,
+            'bbox_data': [x1, y1, x2, y2]
+        },
+        {
+            'class_id': 1,
+            'bbox_data': [x1, y1, x2, y2]
+        },
+        ...
+    ]
+}
+```
+
+- [x] Resolvido o problema de, quando o YOLOv8 não deteta nada, não cria a label.txt, então se o a imagem existir, vai criar um .txt vazio com o nome da imagem 
+- [x] Transformar em máscara preto e branco 
+
+
+???note "Inferência feita pela pipeline"
+
+    <figure markdown="span">
+            ![img_1675](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_02-24-36.png) 
+    <figcaption>img_1675</figcaption>
+    </figure> 
+
+    Transformação em mascara preto e branco
+
+    <figure markdown="span">
+        ![img_1675_BW_mask](https://cdn.statically.io/gh/hslima00/tese_md_images/main/9_pipeline_18-04-2024_02-56-54.png) 
+      <figcaption>Black and white mask</figcaption>
+    </figure> 
