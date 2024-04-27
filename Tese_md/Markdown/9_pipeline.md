@@ -165,3 +165,8 @@ data = {
 
 
 TODO: separar em pastas por classe (fumo e fogo)
+
+
+# 22-Apr-24
+
+- [ ] Testar com imagens ground truth

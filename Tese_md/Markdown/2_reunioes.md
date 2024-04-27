@@ -32,3 +32,13 @@ YOLOv9 paper released on 21FEV24
 - ~1000 test set + x (linha 8)
 - datasets com frames fazer uma amostragem
 - weights and biases
+
+## 26-Apr-24 
+
+- ver anchors do yolov9 (?)
+- ver configuaração que possa limitar tamanho de bounding box
+- passar pipeline na dataset LK 
+- ver yolov8/v9 segmentacao
+- criar tabela com parametros do treino (tamanho de imagem, batch size, data augmentation, lr, epocas)
+- averiguar val a 0
+- guardar configuração do treino
