@@ -42,3 +42,7 @@ YOLOv9 paper released on 21FEV24
 - criar tabela com parametros do treino (tamanho de imagem, batch size, data augmentation, lr, epocas)
 - averiguar val a 0
 - guardar configuração do treino
+
+## Meeting with Rashmi
+
+- AWS Sagemaker, and EC2:
