@@ -47,4 +47,6 @@ YOLOv9 paper released on 21FEV24
 
 - AWS Sagemaker, and EC2:
 
-## uau um novo header!
+## todo
+
+passar a reuniao para escrita!
