@@ -76,3 +76,53 @@ YOLOv9 paper released on 21FEV24
     !!!danger "==Questão para os orientadores== Is it even worth it to continue with the benchmark suite if there is already a popular and trusted platform named Kaggle?"
         
     You need the model from the researchers and you will give them a dataset. This is similar to Kaggle competitions. 
+
+
+    Unlike Kaggle, I don't know if it is possible to create a public repository where researchers can upload their models (upload the model on Amazon S3). 
+
+!!!question "Are there any free alternatives to Amazon S3 and SageMaker?"
+    Maybe Google Drive but that wouldnt be very efficient would it?
+
+    ==Me:== I'm concerned about the size of the models if researchers are uploading them via Google Drive and also the privacy problems they might have on Google/Amazon services.
+
+    Then, the best option would have to be a local server right? ==Does your university have a server that you can use?==
+
+
+!!!question "To create the benchmark suite I was thinking to code a full stack application made with NuxtJS and Flask. Do you think this is a good idea?" 
+    
+    You would have problems with the storing of the models. You cant store them in, for example, a MySQL database because of the size. You would have to store them, either locally on the server, or in a cloud service like Amazon S3.
+
+    ==Me:== Yes, I think we should store them locally. But we actually, as a benchmark, dont need to store the models and code for that long right? We only need the models to be stored for the time of the evaluation and then we could delete them, right?
+
+    ==Rashmi:== Yes, you are right. You only need the models for the evaluation. I think your idea of using Docker images. I'm a bit skeptical for a single person to develop a full stack application like this because its very hard to do. You would normally need a team to do this. 
+
+
+!!!question "So the whole pipeline for this all it would be: I'm a researcher, I go to the benchmark suite website, I download the Docker image with the pre-defined libraries that need to run on the server-side I would develop my code. I would upload my code and my model and my results, after tested, would be displayed in a table"
+    Yes, it sounds simple but its very complex to implement. 
+
+!!!question "On the third challenge, I'm still not sure how could I make the splitting of the model/code throghout different hardware."
+    What do you mean by different hardware? There would be hardware constraints? 
+
+    ==Me:== Yes, a challenge only on a NVIDIA 4090 and another challenge on a NVIDIA Jetson. Then a third challenge where a researcher can split the model across the two hardware.
+
+    ==Rashmi:== Do you know the power of a NVIDIA Jetson? I'm not sure if it's capable of image processing. They can't process heavy images. What would be the size of the images? Are you aware about all these specs?
+
+    ==Me:== I'm not sure about what hardware I will use. I know for a fact that I want to make a benchmark for normal GPU's, for edge devices and for a combination of both. What I was asked was to create a dataset for a benchmark suite, and I've been given a bunch of images, some labeled and some not. Then I should preform all the labelling on the images and create a unified dataset. The images I've been given are SUPER random, from frames of a video to aerial images to ground images, images from fireman, images from the web. The size of the images also differs a lot. 
+
+    ==Rashmi:== The image size for researchers is very important. There are images with 15MB and images with 2GB, and you can imagine that you cant process accurately a 2GB image in a model trained with 15MB images. 
+
+    It's crucial to consider the resources available to researchers. Sometimes, they might not have the means to train models or build them from scratch. From my perspective as an evaluator, I'll be assessing their models and benchmarking them. But it's important for researchers to also think about building their own models.
+
+    When discussing the dataset with your professor, consider what it will look like and what hardware resources you'll have access to. This information will be essential for building the front-end application. For instance, if you're planning to create a user interface with upload buttons, you need to know what kind of hardware you'll be working with.
+
+    If you're dealing with multiple hardware options, things can get tricky. Not all hardware supports inference. For example, while we might use Amazon SageMaker for training models due to its capabilities, we often resort to EC2 instances for inference because they're more cost-effective.
+
+    So, it's crucial to clarify the hardware resources available, the nature and size of the dataset, and then devise a plan for the full-stack architecture. Given the constraints and costs associated with various platforms like S3, SageMaker, Google Cloud, or Azure, it seems like building a custom full-stack application tailored to our specific needs is the best approach.
+
+    That's just my perspective on how we should proceed.
+
+
+
+
+
+
