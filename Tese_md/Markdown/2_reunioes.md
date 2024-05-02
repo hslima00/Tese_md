@@ -111,15 +111,15 @@ YOLOv9 paper released on 21FEV24
 
     ==Rashmi:== The image size for researchers is very important. There are images with 15MB and images with 2GB, and you can imagine that you cant process accurately a 2GB image in a model trained with 15MB images. 
 
-    It's crucial to consider the resources available to researchers. Sometimes, they might not have the means to train models or build them from scratch. From my perspective as an evaluator, I'll be assessing their models and benchmarking them. But it's important for researchers to also think about building their own models.
+    It's crucial to consider the resources available to researchers. Sometimes, they might not have the means to train models or build them from scratch. From my perspective as an evaluator, I'll be assessing their models and benchmarking them. But it's important for researchers to also think about building their own models. (pelo contexto acho que ela estava a falar sobre a necessidade de nos preocuparmos com os recursos em termos de hardware dos investigadores, mas não percebi muito bem. Os pesos não iriam ser os mesmos se o código e dataset fosse o mesmo?)
 
-    When discussing the dataset with your professor, consider what it will look like and what hardware resources you'll have access to. This information will be essential for building the front-end application. For instance, if you're planning to create a user interface with upload buttons, you need to know what kind of hardware you'll be working with.
+    When ==discussing the dataset with your professor, consider what it will look like and what hardware resources== you'll have access to. This information will be essential for building the front-end application. For instance, if you're planning to create a user interface with upload buttons, you need to know what kind of hardware you'll be working with.
 
     If you're dealing with multiple hardware options, things can get tricky. Not all hardware supports inference. For example, while we might use Amazon SageMaker for training models due to its capabilities, we often resort to EC2 instances for inference because they're more cost-effective.
 
-    So, it's crucial to clarify the hardware resources available, the nature and size of the dataset, and then devise a plan for the full-stack architecture. Given the constraints and costs associated with various platforms like S3, SageMaker, Google Cloud, or Azure, it seems like building a custom full-stack application tailored to our specific needs is the best approach.
+    So, it's crucial to clarify the hardware resources available, the nature and size of the dataset, and then devise a plan for the full-stack architecture. Given the constraints and costs associated with various platforms like S3, SageMaker, Google Cloud, or Azure, it seems like building a custom full-stack application tailored to your specific needs is the best approach.
 
-    That's just my perspective on how we should proceed.
+    That's just my perspective on you we should proceed.
 
 
 
