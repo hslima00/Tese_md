@@ -54,3 +54,10 @@ que guarda resultados do tipo:
 ```
 
 O primeiro digito correponde à classe `0 = fire` (podia ser `1 = smoke`, `2 = other`) e os restantes são as coordenadas da bounding box.
+
+
+## YOLOv9 retrain 02-May-24
+
+```bash title="Retrain"
+python train_dual.py --workers 8 --device 0 --batch 16 --data /home/hslima/hdd/yolov9/yolov9/fire_dataset/data.yaml --img 640 --cfg /home/hslima/hdd/yolov9/yolov9/models/detect/yolov9_custom.yaml --weights /home/hslima/hdd/yolov9/yolov9-e.pt --name fire2 --hyp /home/hslima/hdd/yolov9/yolov9/data/hyps/hyp.scratch-high.yaml --min-items 0 --epochs 100 --close-mosaic 15
+```

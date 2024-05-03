@@ -1,3 +1,7 @@
+---
+hide:
+- navigation
+---
 # Reuniões
 
 ## 1-Mar-24
@@ -35,13 +39,16 @@ YOLOv9 paper released on 21FEV24
 
 ## 26-Apr-24 
 
-- ver anchors do yolov9 (?)
-- ver configuaração que possa limitar tamanho de bounding box
-- passar pipeline na dataset LK 
-- ver yolov8/v9 segmentacao
-- criar tabela com parametros do treino (tamanho de imagem, batch size, data augmentation, lr, epocas)
-- averiguar val a 0
-- guardar configuração do treino
+- [ ] ver anchors do yolov9 (?)
+- [x] ver configuaração que possa limitar tamanho de bounding box
+  - "As for bounding box size constraints, there isn't a direct built-in feature in YOLOv8 to limit detection by minimum or maximum bounding box size during the post-processing steps. However, it is a reasonable feature consideration for quality control in certain applications, and we may consider such additions for future versions." [source](https://github.com/ultralytics/ultralytics/issues/3876#issuecomment-1811642710)
+- [ ] passar pipeline na dataset LK 
+- [ ] ver yolov8/v9 segmentacao
+- [ ] criar tabela com parametros do treino (tamanho de imagem, batch size, data augmentation, lr, epocas)
+- [ ] averiguar val a 0
+- [ ] guardar configuração do treino
+
+#
 
 ## Meeting with Rashmi 27-Apr-24
 
