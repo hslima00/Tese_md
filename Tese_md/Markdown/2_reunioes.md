@@ -46,6 +46,7 @@ YOLOv9 paper released on 21FEV24
 - [ ] ver yolov8/v9 segmentacao
 - [ ] criar tabela com parametros do treino (tamanho de imagem, batch size, data augmentation, lr, epocas)
 - [ ] averiguar val a 0
+  -  
 - [ ] guardar configuração do treino
 
 #
@@ -83,6 +84,8 @@ YOLOv9 paper released on 21FEV24
     !!!danger "==Questão para os orientadores== Is it even worth it to continue with the benchmark suite if there is already a popular and trusted platform named Kaggle?"
         
     You need the model from the researchers and you will give them a dataset. This is similar to Kaggle competitions. 
+
+
 
 
     Unlike Kaggle, I don't know if it is possible to create a public repository where researchers can upload their models (upload the model on Amazon S3). 
@@ -133,3 +136,25 @@ YOLOv9 paper released on 21FEV24
 
 
 
+
+
+
+## 03-May-24
+
+- [ ] establecer o tamanho de imagens da dataset
+- o trabalho dos investigadores no nosso caso tb é tratar dos dados 
+- [ ] o que é que a NVIDIA tem para converter um modelo para um edge device
+- [ ] começar a escrever o que já foi feito no autolabelling
+  - [ ] descrever o processo de autolabelling
+  - [ ] explicar o YOLOv9 e SAM genericamente
+    - [ ] explicar as configurações de cada e explicar o output e input de cada 
+  - [ ] criar diagramas a explicar (talvez)
+- [ ] marcar reuniao c prof. Bernardino
+
+uma ideia por paragrafo 
+
+Sobre as datasets: 
+- [ ] fazer 2 grupos: imagens limpas e imagens contaminadas
+- [ ] organizar por tamanho de imagem
+- [ ] marcas de agua 
+- [ ] fazer estatisticas (tipo qual % de imagens tem marca de agua)
