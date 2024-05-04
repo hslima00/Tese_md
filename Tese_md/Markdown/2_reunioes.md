@@ -154,6 +154,7 @@ YOLOv9 paper released on 21FEV24
 uma ideia por paragrafo 
 
 Sobre as datasets: 
+
 - [ ] fazer 2 grupos: imagens limpas e imagens contaminadas
 - [ ] organizar por tamanho de imagem
 - [ ] marcas de agua 
