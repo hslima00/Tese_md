@@ -169,3 +169,4 @@ Sobre as datasets:
 
 ![picture 0](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-32-42.png)  
 
+- Ferramenta para organizar as imagens, ver [aqui](https://hslima00.github.io/Tese_md/10_organizer/) e talvez mostrar
