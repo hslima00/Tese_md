@@ -2,7 +2,7 @@
 
 ## What does it do?
 
-It helps moving the files to the right place: 
+It helps moving images (around 7k) to the right place. See the following folder tree structures as an example of initial and final states:
 
 
 === "From this"
@@ -50,7 +50,7 @@ It helps moving the files to the right place:
 === "To this"
 
     ```bash
-    \HL_FIREFRONT_UNIFIED_DATASET
+    HL_FIREFRONT_UNIFIED_DATASET
     ├───false_negatives
     ├───fire
     │   ├───forest
@@ -75,3 +75,42 @@ It helps moving the files to the right place:
             ├───aerial
             └───ground
     ```
+
+## How to use it?
+
+1. Create a virtual environment and install the requirements:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate # for linux
+    venv\Scripts\activate # for windows
+    pip install -r requirements.txt
+    ```
+
+2. Change the paths in the `display.py` script
+      - [ ] TODO: make it possible to edit a config file and place the desired final tree path
+3. Run the script:
+    ```bash
+    python display.py
+    ```
+4. According to pre-defined keys, look at the image and decide where is should be moved
+
+<center>
+ 
+| Key | Folder | Key | Folder |
+| --- | ------ | --- | ------ |
+| 1 | Fire/Forest/Aerial | 3 | Fire/Urban/Aerial |
+| 2 | Fire/Forest/Ground | 4 | Fire/Urban/Ground |
+| 5 | Noisy Images/Bad Quality/Fire | 6 | Noisy Images/Bad Quality/Smoke |
+| 7 | Noisy Images/Water Mark/Fire | 8 | Noisy Images/Water Mark/Smoke |
+| 9 | Other | q | Smoke/Forest/Aerial |
+| w | Smoke/Forest/Ground | e | Smoke/Urban/Aerial |
+| r | Smoke/Urban/Ground | t | False_Negatives |
+</center>
+
+<figure markdown="span">
+    ![Organizer Running](https://cdn.statically.io/gh/hslima00/tese_md_images/main/10_organizer_06-05-2024_08-06-11.png)
+  <figcaption>Organizer Running</figcaption>
+</figure>  
+
+
+
