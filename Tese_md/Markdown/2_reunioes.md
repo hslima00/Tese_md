@@ -139,7 +139,7 @@ YOLOv9 paper released on 21FEV24
 
 
 
-## 03-May-24
+## 03-May-24 (Maj. Cruz)
 
 - [ ] establecer o tamanho de imagens da dataset
 - o trabalho dos investigadores no nosso caso tb é tratar dos dados 
@@ -159,3 +159,13 @@ Sobre as datasets:
 - [ ] organizar por tamanho de imagem
 - [ ] marcas de agua 
 - [ ] fazer estatisticas (tipo qual % de imagens tem marca de agua)
+
+
+## 06-May-24 (Prof. Bernardino)
+
+### O que foi feito até agora: 
+
+- Autolabelling tool
+
+![picture 0](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-32-42.png)  
+
