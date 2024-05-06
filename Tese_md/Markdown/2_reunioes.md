@@ -171,7 +171,7 @@ Sobre as datasets:
 
 - Mostrar resultados da autolabelling tool
 
-- Ferramenta para organizar as imagens, ver [aqui](https://hslima00.github.io/Tese_md/10_organizer/) e talvez mostrar
+- Ferramenta para organizar as imagens, ver [aqui](https://hslima00.github.io/Tese_md/10_organizer/) e talvez mostrar. [Github](https://github.com/hslima00/Image_organizer)
 - Reunião com investigadora afiliada do MIT para perceber +- como é que eles fazem as coisas
 
 ### Problemas a discutir:
@@ -185,6 +185,8 @@ Sobre as datasets:
   - A dataset é composta por frames de um video
 - Problemas do YOLOv9: falsos negativos, bounding boxes muito grandes
   - Existe maneira de diminuir as bounding boxes? (pelo que estive a ver nos issues do github do YOLOv8 não está implementada uma função do tipo)
+- Tenho duvidas sobre a segmentaçao de fumo por parte do SAM
+- É possivel ter uma maquina remota do IST? Estou a usar uma da AFA e às vezes tenho problemas
 
 ???note "Melhores 5 imagens da dataset GP_Fire_Segmentation_Webimages_v1"
 
