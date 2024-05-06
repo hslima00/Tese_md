@@ -177,15 +177,25 @@ Sobre as datasets:
 ### Problemas a discutir:
 
 - Tamanho das imagens
+  - [ ] 
 - Qualidade das imagens, ou seja, se é para contar com imagens contaminadas (marca de agua, imagens com baixa qualidade, etc)
-- Qual é o hardware que temos disponível para fazer a conversão de modelos para edge devices
+  - ==R== não meter water marks no test set
+  - damos tudo aos investigadores, mas na test set queremos aproximar o máximo à realidade
+  - focar em deteção de fogo e fumo aérea
+  - não usar HH_Gestosa_Fire_Segmentation na training set, é uma boa dataset para test set 
+  - [ ] fazer crop das imagens da HH_Gestosa_Fire_Segmentation par anão apanhar o aviao
+  - [ ] ver as especificações da dataset, camara usada etc  
+- Qual é o hardware que temos disponível
+  - [x] jetson edge 
 - Como é que posso melhorar o YOLOv9 para o nosso caso de uso
+  - [ ] experimentar modelo de segmentacao do YOLOv9
 - IoU médio para a dataset GP_Fire_Segmentation_Webimages_v1 é de 0.52
 - IoU médio para a dataset HH_Gestosa_Fire_Segmentation é de 0.00 -> YOLO não detetou nada. 
   - A dataset é composta por frames de um video
 - Problemas do YOLOv9: falsos negativos, bounding boxes muito grandes
   - Existe maneira de diminuir as bounding boxes? (pelo que estive a ver nos issues do github do YOLOv8 não está implementada uma função do tipo)
 - Tenho duvidas sobre a segmentaçao de fumo por parte do SAM
+  - fazer analise qualitativa, mostrar a varias pessoas a mesma segmentacao e perceber se elas concordam com a segmentação. Labels da Lisa têm dois graus, ambiguo e nao ambiguo
 - É possivel ter uma maquina remota do IST? Estou a usar uma da AFA e às vezes tenho problemas
 
 ???note "Melhores 5 imagens da dataset GP_Fire_Segmentation_Webimages_v1"
