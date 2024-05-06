@@ -165,8 +165,43 @@ Sobre as datasets:
 
 ### O que foi feito até agora: 
 
-- Autolabelling tool
+- Autolabelling tool 
 
-![picture 0](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-32-42.png)  
+![picture 0](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-32-42.png) 
+
+- Mostrar resultados da autolabelling tool
 
 - Ferramenta para organizar as imagens, ver [aqui](https://hslima00.github.io/Tese_md/10_organizer/) e talvez mostrar
+- Reunião com investigadora afiliada do MIT para perceber +- como é que eles fazem as coisas
+
+### Problemas a discutir:
+
+- Tamanho das imagens
+- Qualidade das imagens, ou seja, se é para contar com imagens contaminadas (marca de agua, imagens com baixa qualidade, etc)
+- Qual é o hardware que temos disponível para fazer a conversão de modelos para edge devices
+- Como é que posso melhorar o YOLOv9 para o nosso caso de uso
+- IoU médio para a dataset GP_Fire_Segmentation_Webimages_v1 é de 0.52
+- IoU médio para a dataset HH_Gestosa_Fire_Segmentation é de 0.00 -> YOLO não detetou nada. 
+  - A dataset é composta por frames de um video
+- Problemas do YOLOv9: falsos negativos, bounding boxes muito grandes
+  - Existe maneira de diminuir as bounding boxes? (pelo que estive a ver nos issues do github do YOLOv8 não está implementada uma função do tipo)
+
+???note "Melhores 5 imagens da dataset GP_Fire_Segmentation_Webimages_v1"
+
+    ![picture 1](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-03.png)  
+    ![picture 2](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-04.png)  
+    ![picture 3](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-05.png)  
+    ![picture 4](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-07.png)  
+    ![picture 5](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-08.png)
+
+???note "Piores 5 imagens"
+
+    ![picture 6](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-25.png)  
+    ![picture 7](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-26.png)  
+    ![picture 8](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-27.png)  
+    ![picture 9](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-28.png)  
+    ![picture 10](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-30.png) 
+
+
+  
+
