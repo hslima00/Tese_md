@@ -188,10 +188,9 @@ Sobre as datasets:
 - Qual é o hardware que temos disponível
     - [x] jetson edge 
 - Como é que posso melhorar o YOLOv9 para o nosso caso de uso
-    - [ ] experimentar modelo de segmentacao do YOLOv9
+    - [x] experimentar modelo de segmentacao do YOLOv9 ==piores resultados==
 - IoU médio para a dataset GP_Fire_Segmentation_Webimages_v1 é de 0.52
 - IoU médio para a dataset HH_Gestosa_Fire_Segmentation é de 0.00 -> YOLO não detetou nada. 
-    - A dataset é composta por frames de um video
 - Problemas do YOLOv9: falsos negativos, bounding boxes muito grandes
     - Existe maneira de diminuir as bounding boxes? (pelo que estive a ver nos issues do github do YOLOv8 não está implementada uma função do tipo)
 - Tenho duvidas sobre a segmentaçao de fumo por parte do SAM
@@ -215,5 +214,25 @@ Sobre as datasets:
     ![picture 10](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_06-05-2024_08-43-30.png) 
 
 
+## 09-May-24 (Maj. Cruz)
+
+Trabalho realizado esta semana: 
+
+- Avaliar se o YOLOv9-seg é melhor que a pipeline YOLOv9-det + SAM
+        - [x] treinado um modelo YOLOv9-seg com uma dataset com 201 imagens (foi o que encontrei preparado para YOLOv9...), o YOLOv9-det foi treinado com 8939...
+        - [ ] retreinar com nova dataset com 6k images, para ser mais justo
+- Avaliado modelo treinado YOLOv9-det 8k images 100 epochs, para várias datasets, IoU subiu 
+- Detetado erro quando passagem da pipeline pela dataset HH_Gestosa, IoU está agora nos 0.4 relativamente à ground truth
+- Passagem da pipeline pela LK_Fire com modelos diferentes, resultados parecem bons 
+
+Duvidas: 
+
+- Ainda é possivel arranjar fotos da FAP? 
+
+Trabalho Futuro:
+
+- Treinar YOLOv9-seg com 6k images
+- Ver se é melhor que a pipeline
+- Escrever sobre isto
   
 
