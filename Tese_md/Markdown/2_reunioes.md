@@ -235,6 +235,8 @@ Trabalho Futuro:
 - Ver se é melhor que a pipeline
 - Escrever sobre resultados 
 
+Resultados:
+
 <center>
  
 | Dataset                               | Model       | Method     | mean IoU |
