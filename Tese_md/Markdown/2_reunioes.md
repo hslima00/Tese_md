@@ -233,6 +233,20 @@ Trabalho Futuro:
 
 - Treinar YOLOv9-seg com 6k images
 - Ver se é melhor que a pipeline
-- Escrever sobre isto
+- Escrever sobre resultados 
+
+<center>
+ 
+| Dataset                               | Model       | Method     | mean IoU |
+| ------------------------------------- | ----------- | ---------- | -------- |
+| GP_Fire_Segmentation_Webimages_v1     | fire_best   | pipeline   | 0.52     |
+| GP_Fire_Segmentation_Webimages_v1_NEW | 5_out       | pipeline   | 0.53     |
+| LK_Fire+Smoke_V1                      | fire_best   | pipeline   | no label |
+| LK_Fire+Smoke_V1                      | 5_out       | pipeline   | no label |
+| HH_Gestosa_Fire_Segmentation_new      | 5_out       | pipeline   | 0.4      |
+| GP_Fire_Segmentation_Webimages_v1     | results_100 | yolov9-seg | 0.3      |
+| GP_Fire_Segmentation_Webimages_v1     | results_200 | yolov9-seg | 0.33     |
+ 
+</center>
   
 
