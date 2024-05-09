@@ -219,8 +219,8 @@ Sobre as datasets:
 Trabalho realizado esta semana: 
 
 - Avaliar se o YOLOv9-seg é melhor que a pipeline YOLOv9-det + SAM
-        - [x] treinado um modelo YOLOv9-seg com uma dataset com 201 imagens (foi o que encontrei preparado para YOLOv9...), o YOLOv9-det foi treinado com 8939...
-        - [ ] retreinar com nova dataset com 6k images, para ser mais justo
+    - [x] treinado um modelo YOLOv9-seg com uma dataset com 201 imagens (foi o que encontrei preparado para YOLOv9...), o YOLOv9-det foi treinado com 8939...
+    - [ ] retreinar com nova dataset com 6k images, para ser mais justo
 - Avaliado modelo treinado YOLOv9-det 8k images 100 epochs, para várias datasets, IoU subiu 
 - Detetado erro quando passagem da pipeline pela dataset HH_Gestosa, IoU está agora nos 0.4 relativamente à ground truth
 - Passagem da pipeline pela LK_Fire com modelos diferentes, resultados parecem bons 
