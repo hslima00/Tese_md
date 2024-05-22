@@ -1,7 +1,6 @@
 # Project information
 site_name: Tese Lima
-site_url: https://hslima00.github.io/Tese_md
-/
+site_url: https://hslima00.github.io/Tese_md/
 site_description: Thesis notes
 site_author: Hugo Lima
 # Repository
@@ -27,11 +26,10 @@ theme:
     - navigation.instant
     - content.tabs.link
 
-
-
 markdown_extensions:
   - markdown.extensions.toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      slugify:
+        !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
       permalink: ""
   - markdown.extensions.admonition:
   - markdown.extensions.smarty:
@@ -52,7 +50,10 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
         - name: math
           class: arithmatex
-          format: !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {kwds: {mode: generic, tag: pre}}
+          format:
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {
+              kwds: { mode: generic, tag: pre },
+            }
         # - name: md-render
         #   class: md-render
         #   format: !!python/name:tools.pymdownx_md_render.md_sub_render
@@ -71,7 +72,10 @@ markdown_extensions:
       custom_inline:
         - name: math
           class: arithmatex
-          format: !!python/object/apply:pymdownx.arithmatex.arithmatex_inline_format {kwds: {mode: generic}}
+          format:
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_inline_format {
+              kwds: { mode: generic },
+            }
   - pymdownx.magiclink:
       repo_url_shortener: true
       repo_url_shorthand: true
@@ -94,7 +98,7 @@ markdown_extensions:
   - pymdownx.progressbar:
   - pymdownx.arithmatex:
       generic: true
-      block_tag: 'pre'
+      block_tag: "pre"
   - pymdownx.mark:
   - pymdownx.striphtml:
   #- pymdownx.snippets:
@@ -106,7 +110,7 @@ markdown_extensions:
   #    check_paths: true
   - pymdownx.keys:
       separator: "\uff0b"
-  - pymdownx.details: 
+  - pymdownx.details:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.saneheaders:
@@ -145,7 +149,3 @@ plugins:
       auto_caption: true
       caption_position: bottom
       #shadow: true
-
-
-
-      
