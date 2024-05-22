@@ -231,9 +231,9 @@ Duvidas:
 
 Trabalho Futuro:
 
-- Treinar YOLOv9-seg com 6k images
-- Ver se é melhor que a pipeline
-- Escrever sobre resultados 
+- [x] Treinar YOLOv9-seg com 3k images
+- [x] Ver se é melhor que a pipeline: ==não é melhor==
+- [] Escrever sobre resultados: a escrever, ainda falta comparação entre pipeline e YOLOv9-seg 
 
 Resultados:
 
@@ -250,5 +250,14 @@ Resultados:
 | GP_Fire_Segmentation_Webimages_v1     | results_200 | yolov9-seg | 0.33     |
  
 </center>
-  
+
+## 13-May-24 (trabalho)
+
+- [x] treinar YOLOv9-seg com 3k images 10 epochs
+- [ ] treinar YOLOv9-seg com 3k images 50 epochs
+- [ ] escrever sobre resultados
+- [ ] mandar mail ao Cmdt 991
+- [ ] pensar na forma de organizar as fotos 
+- [ ] conversão entre máscaras PB e label txt YOLOv9 
+- [ ] esta conversão só será útil para retreinar o yolov9 com as imagens que são anotadas pelo ser humano. para isto tenho de ponderar deixar a autolabeling OU arranjar uma forma de passar da máscara para uma label txt de bounding box (o que eu acho que é muito muito mais complexo)!
 
