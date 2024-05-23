@@ -233,31 +233,89 @@ Trabalho Futuro:
 
 - [x] Treinar YOLOv9-seg com 3k images
 - [x] Ver se é melhor que a pipeline: ==não é melhor==
-- [] Escrever sobre resultados: a escrever, ainda falta comparação entre pipeline e YOLOv9-seg 
+- [ ] Escrever sobre resultados: a escrever, ainda falta comparação entre pipeline e YOLOv9-seg 
 
 Resultados:
 
 <center>
  
-| Dataset                               | Model       | Method     | mean IoU |
-| ------------------------------------- | ----------- | ---------- | -------- |
-| GP_Fire_Segmentation_Webimages_v1     | fire_best   | pipeline   | 0.52     |
-| GP_Fire_Segmentation_Webimages_v1     | 5_out       | pipeline   | 0.53     |
-| LK_Fire+Smoke_V1                      | fire_best   | pipeline   | no label |
-| LK_Fire+Smoke_V1                      | 5_out       | pipeline   | no label |
-| HH_Gestosa_Fire_Segmentation          | 5_out       | pipeline   | 0.4      |
-| GP_Fire_Segmentation_Webimages_v1     | results_100 | yolov9-seg | 0.3      |
-| GP_Fire_Segmentation_Webimages_v1     | results_200 | yolov9-seg | 0.33     |
+| Dataset                           | Model       | Method     | mean IoU |
+| --------------------------------- | ----------- | ---------- | -------- |
+| GP_Fire_Segmentation_Webimages_v1 | fire_best   | pipeline   | 0.52     |
+| GP_Fire_Segmentation_Webimages_v1 | 5_out       | pipeline   | 0.53     |
+| LK_Fire+Smoke_V1                  | fire_best   | pipeline   | no label |
+| LK_Fire+Smoke_V1                  | 5_out       | pipeline   | no label |
+| HH_Gestosa_Fire_Segmentation      | 5_out       | pipeline   | 0.4      |
+| GP_Fire_Segmentation_Webimages_v1 | results_100 | yolov9-seg | 0.3      |
+| GP_Fire_Segmentation_Webimages_v1 | results_200 | yolov9-seg | 0.33     |
  
 </center>
 
 ## 13-May-24 (trabalho)
 
 - [x] treinar YOLOv9-seg com 3k images 10 epochs
-- [ ] treinar YOLOv9-seg com 3k images 50 epochs
-- [ ] escrever sobre resultados
-- [ ] mandar mail ao Cmdt 991
+- [x] treinar YOLOv9-seg com 3k images 50 epochs
+- [x] escrever sobre resultados
+- [x] mandar mail ao Cmdt 991
 - [ ] pensar na forma de organizar as fotos 
 - [ ] conversão entre máscaras PB e label txt YOLOv9 
-- [ ] esta conversão só será útil para retreinar o yolov9 com as imagens que são anotadas pelo ser humano. para isto tenho de ponderar deixar a autolabeling OU arranjar uma forma de passar da máscara para uma label txt de bounding box (o que eu acho que é muito muito mais complexo)!
+    - esta conversão só será útil para retreinar o yolov9 com as imagens que são anotadas pelo ser humano. para isto tenho de ponderar deixar a autolabeling OU arranjar uma forma de passar da máscara para uma label txt de bounding box (o que eu acho que é muito muito mais complexo)!
 
+## 23-May-24
+
+**Trabalho realizado:**
+
+- [x] Pedido de fotos à Esq. 991 -> perguntei ao Ten. Luís Santos informalmente se a esquadra tinha fotos, e ele disse que sim, porém que devia contactar o Cmdt. 
+- [x] Pedido formal Sr. Gen. CEMFA
+- [x] Treino YOLOv9-seg
+    - [x] 10 epochs
+        - 3k images
+    - [x] 50 epochs
+        - 3k images
+    - [x] 100 epochs
+        - 200 images
+        - 3k images
+    - [x] 200 epochs
+        - 200 images
+- [x] Começar escrita
+
+
+Resultados YOLOv9-seg:
+
+<center>
+ 
+| Model               | IoU    |
+| ------------------- | ------ |
+| 10_epoch_model_3k   | 0.4048 |
+| 50_epoch_model_3k   | 0.429  |
+| 100_epoch_model_200 | 0.307  |
+| 100_epoch_model_3k  | 0.429  |
+| 200_epoch_model     | 0.334  |
+ 
+</center>
+
+???note "Imagens"
+
+    ![BBox e Segmentação](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_23-05-2024_01-01-04.png)  
+
+    ![Mascara final](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_23-05-2024_01-01-34.png)  
+
+    ![Diferença para ground truth](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_23-05-2024_00-59-50.png)  
+
+
+
+**Trabalho futuro:**
+
+- [ ] escrever sobre resultados do YOLOv9-seg
+- [ ] criar script para transformar mascaras PB em label txt YOLOv9, para retreinar 
+- [ ] treinar novo modelo com as imagens que já tenho label
+- [ ] começar a fazer a label das imagens
+- [ ] criar script para separar as imagens que são aceites e as que não são aceites pelo anotador (tipo, um script que mostre as imagens, as imagens com a deteção do YOLOv9 e as mascaras de segmentação. Depois o anotador só tem de premir uma tecla para decidir se passa ou não. Caso passe, a imagem e a sua respetiva label é automaticamente movida para a pasta final da unified dataset, caso não passe, a imagem é automaticamente movida para uma pasta de imagens não aceites. Depois desta passagem, retreinar o YOLOv9 novamente com as imagens que foram aceites. Repetir o processo até temros as imagens todas labeled)
+
+
+**Duvidas:**
+
+- Imagens CA
+- Pq é q não é boa ideia pedir imagens à 991? (o pedido já seguiu porque já tinha falado com o DC sobre isso) 
+    - ter imagens que não são acessiveis ao publico, ou seja, as que forem cedidas pela 991/CA são uma otima fonte para o test set que irá estar no server side
+- Perante os resultados, deixo o YOLOv9-seg e foco apenas na pipeline (YOLOv9-det+SAM)? Relembrar que o YOLOv9-det foi treinado com 6k imagens, e o YOLOv9-seg com 3k imagens. Também seria muito mais fácil (ainda não sei porque ainda não pensei sobre este assunto a fundo) passar as mascaras PB para o YOLOv9-seg visto que aquilo guarda a posição dos pixeis, facilmente retirada de uma imagem, enquanto que o YOLOv9-det são coordenadas normalizadas `xyhw`. 
