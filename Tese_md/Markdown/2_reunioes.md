@@ -303,7 +303,7 @@ Resultados YOLOv9-seg:
     ![Diferença para ground truth](https://cdn.statically.io/gh/hslima00/tese_md_images/main/2_reunioes_23-05-2024_00-59-50.png)  
 
 
-## TESTE
+
 **Trabalho futuro:**
 
 - [ ] escrever sobre resultados do YOLOv9-seg
@@ -319,3 +319,28 @@ Resultados YOLOv9-seg:
 - Pq é q não é boa ideia pedir imagens à 991? (o pedido já seguiu porque já tinha falado com o DC sobre isso) 
     - ter imagens que não são acessiveis ao publico, ou seja, as que forem cedidas pela 991/CA são uma otima fonte para o test set que irá estar no server side
 - Perante os resultados, deixo o YOLOv9-seg e foco apenas na pipeline (YOLOv9-det+SAM)? Relembrar que o YOLOv9-det foi treinado com 6k imagens, e o YOLOv9-seg com 3k imagens. Também seria muito mais fácil (ainda não sei porque ainda não pensei sobre este assunto a fundo) passar as mascaras PB para o YOLOv9-seg visto que aquilo guarda a posição dos pixeis, facilmente retirada de uma imagem, enquanto que o YOLOv9-det são coordenadas normalizadas `xyhw`. 
+
+## 06-Jun-24 (Maj. Cruz)
+
+**Trabalho realizado:**
+
+- [x] Unified dataset (HL_firefront)
+- [x] Hypertune de parametros 
+- [x] Modelo escolhido: 20_ABR_conf_20 -> aumentar a conf threshold melhorou alguns casos das bbox serem mt grandes. mIoU de 0.456. 
+- [x] Comecei a ver a parte do backend e do frontend.
+- [ ] Fazer alterações ao LaTeX apontadas pelo Major   
+
+
+**Trabalho futuro:**
+
+- [ ] Fazer programa que mostra as imagens originais e as labels feitas pela pipeline. Utilizador pode descartar a anotação ou pode aceitar. As que forem descartadas, quero integrar a lib do labelme no python para que se possa desenhar poligonos onde a anotação não for boa. Para isto tb tenho de arranjar maneira de passar de mascara B&W para formato labelme, para aproveitar alguma coisa que esteja bem da pipeline e fazer alterações minimas. 
+
+
+
+**Duvidas/Dificuldades:**
+
+- Fiquei "vidrado" no treino de hypertunning de parametros perdendo algum tempo que podia ter canalizado para o avanço da pipeline e/ou da fullstack application.
+- Ns se já mostrei o "Image Organizer", mas ainda n avancei muito com aquilo. Estão separadas apenas 2000/7500.
+- Imagens 991/CA
+-  
+
