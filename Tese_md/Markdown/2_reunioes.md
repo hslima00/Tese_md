@@ -344,3 +344,20 @@ Resultados YOLOv9-seg:
 - Imagens 991/CA
 -  
 
+
+
+- tentar guardar a penultima epoca
+- desdobrar o trabalho futuro em dois
+- labelme é um nice to have 
+- pensar como é que os utilizadores vao submeter 
+- focar na app
+- nas mascaras de segmentação ter duas cores para classes diferentes
+- pensar em propsota de uniformização 
+- ver se mascaras tem 1 ou 3 canais (0,128,255)
+
+
+Latex: 
+- explicar como é que o yolov9 se encaixa na pipeline
+- revisao literatura tenta se dizer que x metodologia usar y tecnica 
+- falar das adaptacoes que tivemos que fazer para fazer a pipeline 
+- 
