@@ -360,4 +360,25 @@ Latex:
 - explicar como é que o yolov9 se encaixa na pipeline
 - revisao literatura tenta se dizer que x metodologia usar y tecnica 
 - falar das adaptacoes que tivemos que fazer para fazer a pipeline 
-- 
+
+
+## 21-Jun-24 (Prof. Bernardino + Maj. Cruz)
+
+Notas da reunião:
+
+- dividir ground/aerial
+- mudar cor da mascara do fumo 
+- não anotar à mao as rejected e retreinar com os accepted
+- começar doc de raiz e ir bucar coisas importantes ao pic2 
+- fazer backend prioritario 
+- passar unified dataset para segundo plano
+- fazer ciclos e mostrar que o modelo melhora 
+- fazer novo cronograma com perpetiva de evolucao do trabalho sem dependencia de terceiros e mandar para orientadores 
+- focar na parte do teste 
+
+para a semana
+
+- cronograma atualizado
+- numeros: imagens com labels
+- decisão do que é q vai ser o test set 
+- ver evolucao do modelo à medida que se incrementa a training set 
