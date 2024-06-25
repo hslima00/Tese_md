@@ -378,7 +378,9 @@ Notas da reunião:
 
 para a semana
 
-- cronograma atualizado
-- numeros: imagens com labels
-- decisão do que é q vai ser o test set 
+- cronograma atualizado     
+- numeros: imagens com labels: para isto preciso de ter o numero total de imagens, ou seja, faltam as imagens da ESQ991.   
+- decisão do que é q vai ser o test set: o test set vai ser composto por cerca de 30% 
 - ver evolucao do modelo à medida que se incrementa a training set 
+
+$ 1x1=1 $
