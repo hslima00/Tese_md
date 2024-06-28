@@ -378,9 +378,13 @@ Notas da reunião:
 
 para a semana
 
-- cronograma atualizado     
-- numeros: imagens com labels: para isto preciso de ter o numero total de imagens, ou seja, faltam as imagens da ESQ991.   
+- [ ] cronograma atualizado     
+- [ ] numeros: imagens com labels: para isto preciso de ter o numero total de imagens, ou seja, faltam as imagens da ESQ991. 
+    - [ ] quantas labels é q já tenho feitas
+    - [ ] corrigir o erro dos poligonos do labelme   
 - decisão do que é q vai ser o test set: o test set vai ser composto por cerca de 30% 
-- ver evolucao do modelo à medida que se incrementa a training set 
+- [ ] ver evolucao do modelo à medida que se incrementa a training set problema do tempo aqui, but lets see...  
 
-$ 1x1=1 $
+TODO: 
+
+- [ ] Resolver o problema do labelme tirar algumas masks feitas pela pipeline
