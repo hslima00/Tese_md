@@ -375,16 +375,27 @@ Notas da reunião:
 - fazer ciclos e mostrar que o modelo melhora 
 - fazer novo cronograma com perpetiva de evolucao do trabalho sem dependencia de terceiros e mandar para orientadores 
 - focar na parte do teste 
+- ver evolucao do modelo à medida que se incrementa a training set problema do tempo aqui, but lets see...  
 
 para a semana
 
-- [ ] cronograma atualizado     
-- [ ] numeros: imagens com labels: para isto preciso de ter o numero total de imagens, ou seja, faltam as imagens da ESQ991. 
-    - [ ] quantas labels é q já tenho feitas
-    - [ ] corrigir o erro dos poligonos do labelme   
-- decisão do que é q vai ser o test set: o test set vai ser composto por cerca de 30% 
-- [ ] ver evolucao do modelo à medida que se incrementa a training set problema do tempo aqui, but lets see...  
+- [x] cronograma atualizado     
+- [x] numeros: imagens com labels: para isto preciso de ter o numero total de imagens, ou seja, faltam as imagens da ESQ991. 
+    - [x] quantas labels é q já tenho feitas   
+- [ ] decisão do que é q vai ser o test set: o test set vai ser composto por cerca de 30% 
 
-TODO: 
 
-- [ ] Resolver o problema do labelme tirar algumas masks feitas pela pipeline
+
+!!! danger "IMPORTANTE"
+
+    - [ ] Resolver o problema do labelme tirar algumas masks feitas pela pipeline
+
+
+## 28-Jun-24
+
+- 6443 FIREFRONT + 534 adquiridas na ESQ.
+    - [ ] perguntar se é para manter 
+- Labels: 432 + 35 corrigidas = 467 (7.2% | 6.69% c/ 991)
+- Test set: 
+    - duas datasets: ground e aereo. 
+    - no test set **aereo** devem constar imagens do Gestosa e 991, uma vez que são as que mais se aproximam à finalidade do FIREFRONT

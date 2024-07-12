@@ -170,3 +170,10 @@ TODO: separar em pastas por classe (fumo e fogo)
 # 22-Apr-24
 
 - [ ] Testar com imagens ground truth
+
+
+# 12-Jul-24
+
+- v1 -> 45 imagens 
+- v2 -> 482 images
+- v3 -> 
