@@ -174,6 +174,18 @@ TODO: separar em pastas por classe (fumo e fogo)
 
 # 12-Jul-24
 
+- meter no latex que treinar com poligonos é mais eficiente e apresenta melhores resultados para o YOLO 
+
 - v1 -> 45 imagens 
 - v2 -> 482 images
 - v3 -> 
+
+i love you
+> i love you too boo
+
+refazer yolo dataset com anotacoes - feito
+retreinar - feito
+anotar dataset inteira com novo modelo - a fazer
+get results 
+
+
