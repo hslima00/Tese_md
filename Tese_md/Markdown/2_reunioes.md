@@ -399,3 +399,13 @@ para a semana
 - Test set: 
     - duas datasets: ground e aereo. 
     - no test set **aereo** devem constar imagens do Gestosa e 991, uma vez que são as que mais se aproximam à finalidade do FIREFRONT
+
+
+## 15-Jul-24 (prof. Bernardino)
+
+- mascaras morfologica open/close - opencv: para o fogo, delimitar regioes ignore
+- dividir bbox para ficarem mais pequenas, ter várias instancias de SAM e fazer a junção para ignorar o erro
+- substituir gaussian blur por tela preta
+- disponibilizar apenas uma imagem da esq 991 para investigadores terem em conta as caixas pretas e asa do aviao da gestosa 
+- codigo de pre-processamento e pós deve ser feito dentro de uma layer (para simplificar uniformizacao onnx)
+- averiguar diferentes sizes de imagem e uso de onnx  

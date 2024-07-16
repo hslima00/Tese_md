@@ -176,16 +176,14 @@ TODO: separar em pastas por classe (fumo e fogo)
 
 - meter no latex que treinar com poligonos é mais eficiente e apresenta melhores resultados para o YOLO 
 
-- v1 -> 45 imagens 
-- v2 -> 482 images
-- v3 -> 
+- v1 -> 45  imagens 
+- v2 -> 482 imagens
+- v3 -> 949 imagens
 
-i love you
-> i love you too boo
 
 refazer yolo dataset com anotacoes - feito
 retreinar - feito
-anotar dataset inteira com novo modelo - a fazer
+anotar dataset inteira com novo modelo - feito
 get results 
 
 
