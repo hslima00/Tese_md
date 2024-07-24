@@ -14,6 +14,20 @@
                 "panel": "shared"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Serve mkdocs",
+            "type": "shell",
+            "command": "./.venv/Scripts/activate; cd Tese_md ;mkdocs serve ;    cd ..;                    git add . ;                        git commit -m tasks_json_update;                        git push",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
         }
     ]
 }
