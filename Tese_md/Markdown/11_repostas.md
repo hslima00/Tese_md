@@ -1,7 +1,7 @@
 ---
 hide:
 - navigation
-- toc
+- toc   
 --- 
 
 > Concordo em abosluto com tela preta sobre parte classificada;
